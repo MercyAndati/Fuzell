@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-import { Brain, Eye, EyeOff } from "lucide-react"
+import { Sparkles, Eye, EyeOff } from "lucide-react"
 import Link from "next/link"
 import { useRouter, useSearchParams } from "next/navigation"
 import { useAuth } from "@/components/auth-provider"
@@ -61,7 +61,7 @@ export default function SignupPage() {
         login(data.user, data.token)
         toast({
           title: "Account created!",
-          description: "Welcome to TalentForge AI",
+          description: "Welcome to Fuzell - where talent excels!",
         })
         router.push("/dashboard")
       } else {
@@ -88,8 +88,11 @@ export default function SignupPage() {
       <header className="border-b bg-white/80 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
-            <Brain className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">TalentForge AI</span>
+            <div className="relative">
+              <Sparkles className="h-8 w-8 text-blue-600" />
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
+            </div>
+            <span className="text-2xl font-bold text-gray-900">Fuzell</span>
           </Link>
           <div className="flex space-x-4">
             <Link href="/auth/login">
@@ -104,11 +107,14 @@ export default function SignupPage() {
         <Card className="w-full max-w-md">
           <CardHeader className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-4">
-              <Brain className="h-8 w-8 text-blue-600" />
-              <span className="text-2xl font-bold">TalentForge AI</span>
+              <div className="relative">
+                <Sparkles className="h-8 w-8 text-blue-600" />
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
+              </div>
+              <span className="text-2xl font-bold">Fuzell</span>
             </div>
-            <CardTitle>Create Account</CardTitle>
-            <CardDescription>Join the AI-powered freelancing revolution</CardDescription>
+            <CardTitle>Join Fuzell</CardTitle>
+            <CardDescription>Where talent excels - Start your journey today</CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -138,11 +144,11 @@ export default function SignupPage() {
                 <RadioGroup value={formData.role} onValueChange={(value) => setFormData({ ...formData, role: value })}>
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="freelancer" id="freelancer" />
-                    <Label htmlFor="freelancer">Work as a freelancer</Label>
+                    <Label htmlFor="freelancer">Excel as a freelancer</Label>
                   </div>
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="client" id="client" />
-                    <Label htmlFor="client">Hire freelancers</Label>
+                    <Label htmlFor="client">Find excellent freelancers</Label>
                   </div>
                 </RadioGroup>
               </div>
@@ -180,7 +186,7 @@ export default function SignupPage() {
                 />
               </div>
               <Button type="submit" className="w-full" disabled={isLoading}>
-                {isLoading ? "Creating account..." : "Create Account"}
+                {isLoading ? "Creating account..." : "Start Excelling"}
               </Button>
             </form>
             <div className="mt-6 text-center text-sm">

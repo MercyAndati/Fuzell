@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Brain, Eye, EyeOff } from "lucide-react"
+import { Sparkles, Eye, EyeOff } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { useAuth } from "@/components/auth-provider"
@@ -39,7 +39,7 @@ export default function LoginPage() {
         login(data.user, data.token)
         toast({
           title: "Welcome back!",
-          description: "You have successfully logged in.",
+          description: "You have successfully logged in to Fuzell.",
         })
         router.push("/dashboard")
       } else {
@@ -66,8 +66,11 @@ export default function LoginPage() {
       <header className="border-b bg-white/80 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
-            <Brain className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">TalentForge AI</span>
+            <div className="relative">
+              <Sparkles className="h-8 w-8 text-blue-600" />
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
+            </div>
+            <span className="text-2xl font-bold text-gray-900">Fuzell</span>
           </Link>
           <div className="flex space-x-4">
             <Link href="/auth/signup">
@@ -82,11 +85,14 @@ export default function LoginPage() {
         <Card className="w-full max-w-md">
           <CardHeader className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-4">
-              <Brain className="h-8 w-8 text-blue-600" />
-              <span className="text-2xl font-bold">TalentForge AI</span>
+              <div className="relative">
+                <Sparkles className="h-8 w-8 text-blue-600" />
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
+              </div>
+              <span className="text-2xl font-bold">Fuzell</span>
             </div>
             <CardTitle>Welcome Back</CardTitle>
-            <CardDescription>Sign in to your account to continue</CardDescription>
+            <CardDescription>Sign in to continue excelling</CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">

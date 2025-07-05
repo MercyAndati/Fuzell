@@ -3,7 +3,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Brain, User, Mail, Shield } from "lucide-react"
+import { Sparkles, User, Mail, Shield } from "lucide-react"
 import Link from "next/link"
 
 export default function TestAuthPage() {
@@ -20,8 +20,11 @@ export default function TestAuthPage() {
       <header className="border-b bg-white/80 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
-            <Brain className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">TalentForge AI</span>
+            <div className="relative">
+              <Sparkles className="h-8 w-8 text-blue-600" />
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
+            </div>
+            <span className="text-2xl font-bold text-gray-900">Fuzell</span>
           </Link>
           <div className="flex space-x-4">
             <Link href="/auth/login">
@@ -39,7 +42,7 @@ export default function TestAuthPage() {
           <Card className="mb-8">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl">Test Authentication</CardTitle>
-              <CardDescription>Use these test accounts to login and explore the platform features</CardDescription>
+              <CardDescription>Use these test accounts to login and explore where talent excels</CardDescription>
             </CardHeader>
           </Card>
 

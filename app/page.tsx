@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
-import { Brain, Users, Zap, Shield, MessageSquare, CreditCard } from "lucide-react"
+import { Brain, Users, Zap, Shield, MessageSquare, CreditCard, Sparkles } from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -11,8 +11,11 @@ export default function HomePage() {
       <header className="border-b bg-white/80 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <Brain className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">TalentForge AI</span>
+            <div className="relative">
+              <Sparkles className="h-8 w-8 text-blue-600" />
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
+            </div>
+            <span className="text-2xl font-bold text-gray-900">Fuzell</span>
           </div>
           <div className="flex space-x-4">
             <Link href="/auth/login">
@@ -31,20 +34,24 @@ export default function HomePage() {
           <Badge className="mb-4" variant="secondary">
             AI-Powered Freelancing Platform
           </Badge>
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">Forge Your Future. Connect. Create. Collaborate.</h1>
+          <h1 className="text-5xl font-bold text-gray-900 mb-4">
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Where Talent Excels
+            </span>
+          </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            TalentForge AI revolutionizes freelancing with semantic job matching, AI-generated proposals, and real-time
-            collaboration tools. Experience the future of remote work where talent meets opportunity.
+            Fuzell fuses the best of AI technology with human expertise. Experience semantic job matching, AI-generated
+            proposals, and real-time collaboration tools that revolutionize freelancing.
           </p>
           <div className="flex justify-center space-x-4">
             <Link href="/auth/signup?role=freelancer">
               <Button size="lg" className="px-8">
-                Join as Freelancer
+                Excel as Freelancer
               </Button>
             </Link>
             <Link href="/auth/signup?role=client">
               <Button size="lg" variant="outline" className="px-8 bg-transparent">
-                Hire Talent
+                Find Excellence
               </Button>
             </Link>
           </div>
@@ -54,7 +61,7 @@ export default function HomePage() {
       {/* Features Section */}
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose TalentForge AI?</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Why Choose Fuzell?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card>
               <CardHeader>
@@ -114,15 +121,15 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-blue-600 text-white">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Freelancing Experience?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready to Excel in Your Freelancing Journey?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Join thousands of freelancers and clients already using TalentForge AI
+            Join thousands of freelancers and clients already excelling with Fuzell
           </p>
           <Link href="/auth/signup">
             <Button size="lg" variant="secondary" className="px-8">
-              Start Your Journey
+              Start Excelling Today
             </Button>
           </Link>
         </div>
@@ -132,12 +139,10 @@ export default function HomePage() {
       <footer className="bg-gray-900 text-white py-8 px-4">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <Brain className="h-6 w-6" />
-            <span className="text-xl font-bold">TalentForge AI</span>
+            <Sparkles className="h-6 w-6" />
+            <span className="text-xl font-bold">Fuzell</span>
           </div>
-          <p className="text-gray-400">
-            © 2024 TalentForge AI. All rights reserved. Forging the future of freelancing with AI.
-          </p>
+          <p className="text-gray-400">© 2024 Fuzell. All rights reserved. Where talent excels.</p>
         </div>
       </footer>
     </div>

@@ -7,8 +7,8 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "TalentForge AI - AI-Powered Freelancing Platform",
-  description: "Connect freelancers and clients with AI-powered matching and collaboration tools",
+  title: "Fuzell - Where Talent Excels | AI-Powered Freelancing Platform",
+  description: "Where talent excels - Connect freelancers and clients with AI-powered matching and collaboration tools",
     generator: 'v0.dev'
 }
 

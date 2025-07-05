@@ -1,8 +1,10 @@
-# TalentForge AI - AI-Powered Freelancing Platform
+# Fuzell - AI-Powered Freelancing Platform
 
 🌟 **[Live Demo](https://v0-mern-stack-project-b72t5vjl7-andatimercy8-1248s-projects.vercel.app/)** - Test with jane@example.com / password
 
-TalentForge AI is a revolutionary freelancing platform that leverages artificial intelligence to connect freelancers and clients more effectively than traditional platforms. Built with Next.js, it features semantic job matching, AI-powered proposal generation, and real-time collaboration tools.
+Fuzell is a revolutionary freelancing platform that leverages artificial intelligence to connect freelancers and clients more effectively than traditional platforms. Built with Next.js, it features semantic job matching, AI-powered proposal generation, and real-time collaboration tools.
+
+**"Where talent excels"** - Fuzell fuses the best of AI technology with human expertise to create the ultimate freelancing experience.
 
 ## 🚀 Features
 
@@ -47,7 +49,7 @@ TalentForge AI is a revolutionary freelancing platform that leverages artificial
 1. **Clone the repository**
    \`\`\`bash
    git clone <your-repo-url>
-   cd talentforge-ai
+   cd fuzell
    \`\`\`
 
 2. **Install dependencies**
@@ -110,7 +112,7 @@ Use these pre-configured accounts to test different user roles:
 ## 🏗 Project Structure
 
 \`\`\`
-talentforge-ai/
+fuzell/
 ├── app/                          # Next.js App Router
 │   ├── api/                      # API routes
 │   │   ├── auth/                 # Authentication endpoints
@@ -215,7 +217,7 @@ talentforge-ai/
 npm install mongodb mongoose
 
 # Add to .env.local
-MONGODB_URI=mongodb://localhost:27017/talentforge-ai
+MONGODB_URI=mongodb://localhost:27017/fuzell
 \`\`\`
 
 #### Production Database (MongoDB Atlas)
@@ -225,7 +227,7 @@ MONGODB_URI=mongodb://localhost:27017/talentforge-ai
 
 2. **Get Connection String**
    \`\`\`env
-   MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/talentforge-ai
+   MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/fuzell
    \`\`\`
 
 3. **Database Schema Design**
@@ -350,4 +352,4 @@ For support and questions:
 
 ---
 
-**Built with ❤️ using Next.js and AI**
+**Built with ❤️ using Next.js and AI - Where talent excels**
