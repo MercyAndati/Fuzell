@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
   try {
     const { email, password } = await request.json()
 
-    console.log("Login attempt for:", email)
+    console.log("TalentForge AI - Login attempt for:", email)
     console.log(
       "Available users:",
       users.map((u) => u.email),
@@ -55,10 +55,10 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ message: "Invalid credentials" }, { status: 401 })
     }
 
-    console.log("Login successful for:", email)
+    console.log("TalentForge AI - Login successful for:", email)
 
     // Create a simple token (in production, use proper JWT)
-    const token = `token_${user.id}_${Date.now()}`
+    const token = `talentforge_token_${user.id}_${Date.now()}`
 
     // Return user data (without password) and token
     const { password: _, ...userWithoutPassword } = user
@@ -68,7 +68,7 @@ export async function POST(request: NextRequest) {
       token,
     })
   } catch (error) {
-    console.error("Login error:", error)
+    console.error("TalentForge AI - Login error:", error)
     return NextResponse.json({ message: "Internal server error" }, { status: 500 })
   }
 }

@@ -61,7 +61,7 @@ export default function SignupPage() {
         login(data.user, data.token)
         toast({
           title: "Account created!",
-          description: "Welcome to SkillSync AI",
+          description: "Welcome to TalentForge AI",
         })
         router.push("/dashboard")
       } else {
@@ -89,7 +89,7 @@ export default function SignupPage() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
             <Brain className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">SkillSync AI</span>
+            <span className="text-2xl font-bold text-gray-900">TalentForge AI</span>
           </Link>
           <div className="flex space-x-4">
             <Link href="/auth/login">
@@ -105,7 +105,7 @@ export default function SignupPage() {
           <CardHeader className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-4">
               <Brain className="h-8 w-8 text-blue-600" />
-              <span className="text-2xl font-bold">SkillSync AI</span>
+              <span className="text-2xl font-bold">TalentForge AI</span>
             </div>
             <CardTitle>Create Account</CardTitle>
             <CardDescription>Join the AI-powered freelancing revolution</CardDescription>

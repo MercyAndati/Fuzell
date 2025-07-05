@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
   try {
     const { name, email, password, role } = await request.json()
 
-    console.log("Signup attempt for:", email, "with role:", role)
+    console.log("TalentForge AI - Signup attempt for:", email, "with role:", role)
 
     // Check if user already exists
     const existingUser = users.find((u) => u.email === email)
@@ -54,11 +54,11 @@ export async function POST(request: NextRequest) {
     }
 
     users.push(newUser)
-    console.log("User created successfully:", email)
+    console.log("TalentForge AI - User created successfully:", email)
     console.log("Total users now:", users.length)
 
     // Create a simple token (in production, use proper JWT)
-    const token = `token_${newUser.id}_${Date.now()}`
+    const token = `talentforge_token_${newUser.id}_${Date.now()}`
 
     // Return user data (without password) and token
     const { password: _, ...userWithoutPassword } = newUser
@@ -68,7 +68,7 @@ export async function POST(request: NextRequest) {
       token,
     })
   } catch (error) {
-    console.error("Signup error:", error)
+    console.error("TalentForge AI - Signup error:", error)
     return NextResponse.json({ message: "Internal server error" }, { status: 500 })
   }
 }

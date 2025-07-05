@@ -1,8 +1,8 @@
-# SkillSync AI - AI-Powered Freelancing Platform
+# TalentForge AI - AI-Powered Freelancing Platform
 
-🌟 demo: https://v0-mern-stack-project-b72t5vjl7-andatimercy8-1248s-projects.vercel.app/
+🌟 **[Live Demo](https://v0-mern-stack-project-b72t5vjl7-andatimercy8-1248s-projects.vercel.app/)** - Test with jane@example.com / password
 
-SkillSync AI is a revolutionary freelancing platform that leverages artificial intelligence to connect freelancers and clients more effectively than traditional platforms. Built with Next.js, it features semantic job matching, AI-powered proposal generation, and real-time collaboration tools.
+TalentForge AI is a revolutionary freelancing platform that leverages artificial intelligence to connect freelancers and clients more effectively than traditional platforms. Built with Next.js, it features semantic job matching, AI-powered proposal generation, and real-time collaboration tools.
 
 ## 🚀 Features
 
@@ -47,7 +47,7 @@ SkillSync AI is a revolutionary freelancing platform that leverages artificial i
 1. **Clone the repository**
    \`\`\`bash
    git clone <your-repo-url>
-   cd skillsync-ai
+   cd talentforge-ai
    \`\`\`
 
 2. **Install dependencies**
@@ -110,7 +110,7 @@ Use these pre-configured accounts to test different user roles:
 ## 🏗 Project Structure
 
 \`\`\`
-skillsync-ai/
+talentforge-ai/
 ├── app/                          # Next.js App Router
 │   ├── api/                      # API routes
 │   │   ├── auth/                 # Authentication endpoints
@@ -215,7 +215,7 @@ skillsync-ai/
 npm install mongodb mongoose
 
 # Add to .env.local
-MONGODB_URI=mongodb://localhost:27017/skillsync-ai
+MONGODB_URI=mongodb://localhost:27017/talentforge-ai
 \`\`\`
 
 #### Production Database (MongoDB Atlas)
@@ -225,7 +225,7 @@ MONGODB_URI=mongodb://localhost:27017/skillsync-ai
 
 2. **Get Connection String**
    \`\`\`env
-   MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/skillsync-ai
+   MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/talentforge-ai
    \`\`\`
 
 3. **Database Schema Design**
@@ -314,5 +314,40 @@ For support and questions:
 - Create an issue on GitHub
 - Check the troubleshooting section
 - Review the test accounts and workflows
+
+## 🎬 Demo Video Creation
+
+### Recommended Tools for Demo Videos:
+
+1. **Loom** (loom.com) - Free, easy screen recording
+2. **OBS Studio** - Free, professional recording
+3. **Screencastify** - Chrome extension for quick demos
+4. **Camtasia** - Professional editing features
+
+### Demo Script Suggestions:
+
+1. **Introduction** (30 seconds)
+   - Show homepage and key features
+   - Explain the AI-powered difference
+
+2. **Freelancer Journey** (2 minutes)
+   - Login as freelancer
+   - Browse jobs with AI search
+   - Generate and submit proposal
+
+3. **Client Journey** (2 minutes)
+   - Login as client
+   - Post a job
+   - Review proposals
+
+4. **Collaboration Features** (1 minute)
+   - Show chat system
+   - Demonstrate real-time features
+
+5. **Conclusion** (30 seconds)
+   - Highlight key benefits
+   - Call to action
+
+---
 
 **Built with ❤️ using Next.js and AI**

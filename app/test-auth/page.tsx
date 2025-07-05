@@ -21,7 +21,7 @@ export default function TestAuthPage() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
             <Brain className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">SkillSync AI</span>
+            <span className="text-2xl font-bold text-gray-900">TalentForge AI</span>
           </Link>
           <div className="flex space-x-4">
             <Link href="/auth/login">

@@ -7,7 +7,7 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "SkillSync AI - AI-Powered Freelancing Platform",
+  title: "TalentForge AI - AI-Powered Freelancing Platform",
   description: "Connect freelancers and clients with AI-powered matching and collaboration tools",
     generator: 'v0.dev'
 }

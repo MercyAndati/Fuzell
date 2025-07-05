@@ -67,7 +67,7 @@ export default function LoginPage() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
             <Brain className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">SkillSync AI</span>
+            <span className="text-2xl font-bold text-gray-900">TalentForge AI</span>
           </Link>
           <div className="flex space-x-4">
             <Link href="/auth/signup">
@@ -83,7 +83,7 @@ export default function LoginPage() {
           <CardHeader className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-4">
               <Brain className="h-8 w-8 text-blue-600" />
-              <span className="text-2xl font-bold">SkillSync AI</span>
+              <span className="text-2xl font-bold">TalentForge AI</span>
             </div>
             <CardTitle>Welcome Back</CardTitle>
             <CardDescription>Sign in to your account to continue</CardDescription>

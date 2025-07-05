@@ -12,7 +12,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Brain className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">SkillSync AI</span>
+            <span className="text-2xl font-bold text-gray-900">TalentForge AI</span>
           </div>
           <div className="flex space-x-4">
             <Link href="/auth/login">
@@ -31,10 +31,10 @@ export default function HomePage() {
           <Badge className="mb-4" variant="secondary">
             AI-Powered Freelancing Platform
           </Badge>
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">Connect. Create. Collaborate.</h1>
+          <h1 className="text-5xl font-bold text-gray-900 mb-6">Forge Your Future. Connect. Create. Collaborate.</h1>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            SkillSync AI revolutionizes freelancing with semantic job matching, AI-generated proposals, and real-time
-            collaboration tools. Experience the future of remote work.
+            TalentForge AI revolutionizes freelancing with semantic job matching, AI-generated proposals, and real-time
+            collaboration tools. Experience the future of remote work where talent meets opportunity.
           </p>
           <div className="flex justify-center space-x-4">
             <Link href="/auth/signup?role=freelancer">
@@ -54,7 +54,7 @@ export default function HomePage() {
       {/* Features Section */}
       <section className="py-16 px-4 bg-white">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose SkillSync AI?</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Why Choose TalentForge AI?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card>
               <CardHeader>
@@ -118,7 +118,7 @@ export default function HomePage() {
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Freelancing Experience?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Join thousands of freelancers and clients already using SkillSync AI
+            Join thousands of freelancers and clients already using TalentForge AI
           </p>
           <Link href="/auth/signup">
             <Button size="lg" variant="secondary" className="px-8">
@@ -133,10 +133,10 @@ export default function HomePage() {
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <Brain className="h-6 w-6" />
-            <span className="text-xl font-bold">SkillSync AI</span>
+            <span className="text-xl font-bold">TalentForge AI</span>
           </div>
           <p className="text-gray-400">
-            © 2024 SkillSync AI. All rights reserved. Revolutionizing freelancing with AI.
+            © 2024 TalentForge AI. All rights reserved. Forging the future of freelancing with AI.
           </p>
         </div>
       </footer>
