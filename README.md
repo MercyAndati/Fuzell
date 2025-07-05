@@ -1,6 +1,6 @@
 # SkillSync AI - AI-Powered Freelancing Platform
 
-🌟 **[Live Demo](https://skillsync-ai.vercel.app)** - Test with jane@example.com / password
+🌟 demo: https://v0-mern-stack-project-b72t5vjl7-andatimercy8-1248s-projects.vercel.app/
 
 SkillSync AI is a revolutionary freelancing platform that leverages artificial intelligence to connect freelancers and clients more effectively than traditional platforms. Built with Next.js, it features semantic job matching, AI-powered proposal generation, and real-time collaboration tools.
 
