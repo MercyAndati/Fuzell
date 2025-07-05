@@ -1,9 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Optimize for production
-  experimental: {
-    optimizeCss: true,
-  },
   // Reduce bundle size
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
